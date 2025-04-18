@@ -110,6 +110,76 @@
             width:65%;
             float: left;
         }
+        .o1{
+            background-color:black;
+            height:300px;
+            width:70%;
+            float: left;
+        }
+        .o11{
+            background-color:beige;
+            height:250px;
+            width:90%;
+            float: left;
+            margin: 25px;
+        }
+        .o12{
+            background-color:black;
+            height:200px;
+            width:90%;
+            float: left;
+            margin:20px;
+        }
+
+        .o13{
+            background-color:black;
+            height:150px;
+            width:90%;
+            float: left;
+            margin:20px;
+        }
+        .o14{
+            background-color:beige;
+            height:100px;
+            width:90%;
+            float: left;
+            margin:20px;
+        }
+
+        .o15{
+            background-color:black;
+            height:50px;
+            width:90%;
+            float: left;
+            margin:20px;
+        }
+
+        .o2{
+            background-color:lightcoral;
+            height:300px;
+            width:30%;
+            float: left;
+        }
+        .o21{
+            background-color:rgb(135, 128, 240);
+            height:100px;
+            width:100%;
+            float: left;
+        }
+
+        .o22{
+            background-color:lightcoral;
+            height:100px;
+            width:100%;
+            float: left;
+        }
+
+        .o23{
+            background-color:rgb(22, 139, 16);
+            height:100px;
+            width:100%;
+            float: left;
+        }
 
         .p{
             background-color:yellow;
@@ -124,6 +194,37 @@
             width:100%;
             float: left;
         }
+
+        .p11{
+        background-color:black;
+            height:150px;
+            width:50%;
+            float: left;
+      }
+      .p111{
+           background-color:royalblue;
+            height:80px;
+            width:70%;
+            margin:35px;
+            float:left;
+            
+      }
+
+      .p122{
+           background-color:chocolate;
+            height:80px;
+            width:70%;
+            margin:35px;
+            float:left;
+            
+      }
+
+      .p12{
+        background-color:beige;
+            height:150px;
+            width:50%;
+            float: left;
+      }
 
         .p2{
             background-color:red;
@@ -146,19 +247,42 @@
             float: left;
         }
 
-      .p11{
-        background-color:black;
-            height:150px;
-            width:50%;
-            float: left;
-      }
+        .p211{
+            background-color:black;
+            height:80px;
+            width:70%;
+            margin:35px;
+            float:left;
+        }
+        .p222{
+            background-color:white;
+            height:80px;
+            width:70%;
+            margin:35px;
+            float:left;
+        }
 
-      .p12{
-        background-color:beige;
-            height:150px;
-            width:50%;
-            float: left;
-      }
+
+        /*=============== animation ========== */
+/* Keyframes */
+@keyframes fadeScale {
+  0% {
+    opacity: 0.5;
+    transform: scaleX(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scaleY(1.1);
+  }
+}
+
+/* Apply to target elements with infinite loop */
+.p111, .p122, .p211, .p222 {
+  animation: fadeScale 2s ease-in-out infinite reverse;
+}
+
+
+    
     </style>
 </head>
 <body>
@@ -188,20 +312,49 @@
 
     <!---------- DIV 5 Row------------>
 
-    <div class="o"></div>
-    <div class="p">
-        <div class="p1">
-            <div class="p11"></div>
-            <div class="p12"></div>
+    <div class="o">
+        <div class="o1">
+            <div class="o11">
+                <div class="o12">
+                        <div class="o13">
+                            <div class="o14">
+                                <div class="o15">
+
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
         </div>
-        <div class="p2">
-            <div class="p21"></div>
-            <div class="p22"></div>
+        <div class="o2">
+            <div class="o21"></div>
+            <div class="o22"></div>
+            <div class="o23"></div>
         </div>
     </div>
+    <div class="p">
+        <div class="p1">
+            <div class="p11">
+                <div class="p111">
 
+                </div>
+            </div>
+            <div class="p12">
+                <div class="p122">
 
+                </div>
+            </div>
+        </div>
+        <div class="p2">
+            <div class="p21">
+                <div class="p211"></div>
+            </div>
+            <div class="p22">
+                <div class="p222">
 
-
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
