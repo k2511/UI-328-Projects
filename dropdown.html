@@ -3,40 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navbar</title>
+    <title>Dropdown</title>
     <style>
- .navbar
-{
-  list-style-type:none;
-  display: flex;
-}
+      .dropdown-btn{
+        background-color: black;
+        color: white;
+        padding:10px;
+        cursor: pointer;
+      }
 
-.navbar li a{
-  text-decoration:none;
-  background-color:purple;
-  color:white;
-  padding:10px;
-}
+      .dropdown-menu a{
+        text-decoration: none;
+        background-color: orange;
+        color: white;
+        padding:5px;
+        display: block;
+        text-align: center;
+    
+      }
 
-.navbar li a:hover{
-  background-color:orangered;
-  
-}
+      .dropdown-menu a:hover{
+        background-color: purple;
+        color: white;
+        display: block;
+       
+      }
+
+      .dropdown-menu{
+       position: absolute;
+       display: none;
+      }
+
+      .dropdown{
+        position: relative;
+      }
+
+
+      .dropdown:hover .dropdown-menu{
+        display: block;
+      }
+
     </style>
 </head>
 <body>
-    <ul class="navbar">
-        <li><a href="#">HOME</a></li>
-        <li><a href="#">ABOUT</a></li>
-        <li><a href="#">COURSES</a></li>
-        <li><a href="#">GALLERY</a></li>
-        <li><a href="#">PRODUCT</a></li>
-        <li><a href="#">TESTIMONIAL</a></li>
-        <li><a href="#">BLOG</a></li>
-        <li><a href="#">REVIW</a></li>
-        <li><a href="#">CONTACT</a></li>
-        <li><a href="#">LOGIN</a></li>
-        <li><a href="#">HELP</a></li>
-    </ul>
+    <div class="dropdown">
+      <button class="dropdown-btn">Courses</button>
+      <div class="dropdown-menu">
+        <a href="#">Full Stack</a>
+        <a href="#">Mern Stack</a>
+        <a href="#">Mean Stack</a>
+        <a href="#">UI/UX Stack</a>
+        <a href="#">Python Developer</a>
+        <a href="#">Java Developer</a>
+        <a href="#">Data Anaytics</a>
+        <a href="#">Backedn Developer</a>
+      </div>
+    </div>
 </body>
 </html>
